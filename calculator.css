@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: powderblue;
+}
+
+.Calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+    background: #121021;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.display {
+    width: 100%;
+    max-width: 283px;
+    padding: 20px;
+    text-align: right;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    display: block;
+    color: white;
+    background: #000;
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+    border: 1px solid rgba(176, 224, 230, 0.522);
+    border-radius: 5px;
+    letter-spacing: 2px;
+    text-align-last: right;
+}
+
+td {
+    text-align: center;
+}
+
+.numBtn {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.operationBtn {
+    border-radius: 10px;
+    font-weight: bold;
+    background: #ff9500;
+    color: #121021;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    font-size: 1.5rem;
+}
+.clear{
+    background: #ff9500;
+    font-weight: bold;
+}
+.enter {
+    padding: 110px 25px;
+}

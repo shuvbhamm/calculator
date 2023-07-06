@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <table class="Calculator">
+        <tr>
+            <td colspan="4">
+                <span class="display" id="display">0</span>
+            </td>
+        </tr>
+        <tr>
+            <td><button class="operationBtn" onclick="calculate('+')">+</button></td>
+            <td><button class="operationBtn" onclick="calculate('-')">-</button></td>
+            <td><button class="operationBtn" onclick="calculate('*')">*</button></td>
+            <td><button class="operationBtn" onclick="calculate('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="numBtn" onclick="calculate('7')">7</button></td>
+            <td><button class="numBtn" onclick="calculate('8')">8</button></td>
+            <td><button class="numBtn" onclick="calculate('9')">9</button></td>
+            <td rowspan="4"><button class="operationBtn enter" onclick="Result()">=</button></td>
+        </tr>
+        <tr>
+            <td><button class="numBtn" onclick="calculate('4')">4</button></td>
+            <td><button class="numBtn" onclick="calculate('5')">5</button></td>
+            <td><button class="numBtn" onclick="calculate('6')">6</button></td>
+        </tr>
+        <tr>
+            <td><button class="numBtn" onclick="calculate('1')">1</button></td>
+            <td><button class="numBtn" onclick="calculate('2')">2</button></td>
+            <td><button class="numBtn" onclick="calculate('3')">3</button></td>
+        </tr>
+        <tr>
+            <td><button class="numBtn clear" onclick="clearDisplay()">C</button></td>
+            <td><button class="numBtn" onclick="calculate('0')">0</button></td>
+            <td><button class="numBtn" onclick="calculate('.')">.</button></td>
+        </tr>
+    </table>
+
+
+    <script src="./calculator.js"></script>
+</body>
+</html>
